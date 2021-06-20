@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 时间戳  获得Date距1970.1.1过多少毫秒
+        // 1.valueOf()和getTiem()
+        var date = new Date();
+        console.log(date.valueOf());
+        console.log(date.getTime());
+        // 2.简单方法(常用)
+        var date1 = +new Date();
+        console.log(date1);
+        // 3.h5 新增方法
+        console.log(Date.now());
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

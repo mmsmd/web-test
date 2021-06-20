@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var balance = 100;
+        var save = 0;
+        var withdraw = 0;
+        do {
+            var choice = prompt('请输入您要的操作：\n1.存钱\n2.取钱\n3.显示余额\n4.退出');
+            if (choice == 1) {
+                save = prompt('请输入存入金额');
+                balance += parseFloat(save);
+                alert('您现在的钱数是：' + balance);
+            } else if (choice == 2) {
+                withdraw = prompt('请输入取出金额');
+                balance -= parseFloat(withdraw);
+                alert('您现在的钱数是：' + balance);
+            } else if (choice == 3) {
+                alert('您现在的钱数是：' + balance);
+            } else if (choice == 4) {
+                alert('正在退出');
+                break;
+            }
+        } while (choice == 1 || choice == 2 || choice == 3 || choice == 4);
+        alert('输入错误');
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

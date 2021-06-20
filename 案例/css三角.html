@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css三角</title>
+    <style>
+        .box1 {
+            width: 0;
+            height: 0;
+            border-top: 50px solid pink;
+            border-right: 50px solid red;
+            border-bottom: 50px solid green;
+            border-left: 50px solid blue;
+        }
+
+        .box2 {
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-top: 50px solid pink;
+            margin-top: 50px;
+        }
+
+        .jd {
+            position: relative;
+            width: 120px;
+            height: 249px;
+            background-color: pink;
+        }
+
+        .jd span {
+            position: absolute;
+            right: 15px;
+            top: -10px;
+            width: 0;
+            height: 0;
+            /* 兼容 */
+            font-size: 0;
+            line-height: 0;
+            border: 5px solid transparent;
+            border-bottom: 5px solid pink;
+        }
+
+        .mi {
+            position: relative;
+            width: 200px;
+            height: 50px;
+            background-color: blue;
+            margin-top: 20px;
+        }
+
+        .mi span {
+            position: absolute;
+            left: 200px;
+            top: 15px;
+            width: 0;
+            height: 0;
+            font-size: 0;
+            line-height: 0;
+            border: 10px solid transparent;
+            border-left: 10px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="jd">
+        <span></span>
+    </div>
+    <div class="mi">
+        <span></span>
+    </div>
+</body>
+
+</html>

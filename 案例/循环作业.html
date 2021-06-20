@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1-100所有数的总和和平均值
+        var sum = 0;
+        var average = 0;
+        for (var i = 1; i <= 100; i++) {
+            sum += i;
+        }
+        average = sum / 100;
+        console.log('1-100总和：' + sum + '\n平均值：' + average);
+
+        // 1-100所有偶数的和
+        var even = 0;
+        for (var j = 1; j <= 100; j++) {
+            if (j % 2 == 0) {
+                even += j;
+            }
+        }
+        console.log(even);
+
+        // 求100以内7的倍数的总和
+        var sum1 = 0;
+        for (var a = 1; a <= 100; a++) {
+            if (a % 7 == 0) {
+                sum1 += a;
+            }
+        }
+        console.log(sum1);
+
+        // for循环打印矩形，每次只能输出一个🌟
+        var str = '';
+        for (var b = 1; b <= 5; b++) {
+            for (var c = 1; c <= 5; c++) {
+                str += '🌟'
+            }
+            str += '\n';
+        }
+        console.log(str);
+
+        // for循环打印正三角
+        var str1 = '';
+        for (var d = 1; d <= 5; d++) {
+            for (var e = 1; e <= d; e++) {
+                str1 += '🌟';
+            }
+            str1 += '\n';
+        }
+        console.log(str1);
+
+        //for循环打印99乘法表
+        var str2 = '';
+        for (var f = 1; f <= 9; f++) {
+            for (var g = 1; g <= f; g++) {
+                str2 += g + '*' + f + '=' + g * f + '\t';
+            }
+            str2 += '\n';
+        }
+        console.log(str2);
+
+        // 输入账户与密码，若用户名为“admin”，密码为“123456”，则提示用户登录成功，否则让用户一直输入 
+        do {
+            var username = prompt('请输入用户名：');
+            var password = prompt('请输入密码：');
+        } while (username != 'admin' && password != '123456');
+        alert('登陆成功');
+
+        // 求1-100的累加值，且跳过个位数为3的数\
+        var sum3 = 0;
+        for (var z = 1; z <= 100; z++) {
+            if (z % 10 == 3) {
+                continue
+            }
+            sum3 += z;
+        }
+        console.log(sum3);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
