@@ -22,6 +22,17 @@
             }
         }
         console.log(o);
+        //2.遍历对象
+        var max = 0;
+        var ch = '';
+        for (var k in o) {
+            if (o[k] > max) {
+                max = o[k];
+                ch = k;
+            }
+        }
+        console.log(max);
+        console.log('最多字符' + ch);
     </script>
 </head>
 
