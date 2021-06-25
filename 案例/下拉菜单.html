@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .dropdown {
+            width: 50px;
+            border: 1px solid #333;
+            text-align: center;
+        }
+
+        .dt {
+            border-bottom: 1px solid #333;
+        }
+
+        .dd {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div class="dropdown">
+            <div class="dt">微博</div>
+            <div class="dd">
+                <ul>
+                    <li>私信</li>
+                    <li>评论</li>
+                    <li>@我</li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            var dt = document.querySelector('.dt');
+            var dd = document.querySelector('.dd');
+            dt.onmouseover = function () {
+                dd.style.display = 'inline';
+            }
+            dt.onmouseout = function () {
+                dd.style.display = 'none';
+            }
+        </script>
+    </body>
+</body>
+
+</html>
