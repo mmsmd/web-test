@@ -77,6 +77,18 @@
                 td.innerHTML = datas[i][k];
                 tr.appendChild(td);
             }
+            //创建有删除两个字的单元格
+            var td = document.createElement('td');
+            td.innerHTML = '<a href = "javascript:;">删除</a>';
+            tr.appendChild(td);
+        }
+
+        //删除操作
+        var as = document.querySelectorAll('a');
+        for (var i = 0; i < as.length; i++) {
+            as[i].onclick = function () {
+                tbody.removeChild(this.parentNode.parentNode);
+            }
         }
         //for(var k in obj)
         //  k 得到的是属性名
