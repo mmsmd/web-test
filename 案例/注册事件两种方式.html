@@ -13,12 +13,22 @@
     <button>方法监听注册事件</button>
     <script>
         var btns = document.querySelectorAll('button');
+        //1.传统方式
         btns[0].onclick = function () {
             alert('hi');
         };
         btns[0].onclick = function () {
             alert('hao a u');
-        }
+        };
+        //2.事件监听 addEventListener 
+        //(1)里面的事件类型是字符串 必定加引号 而且不带on
+        //(2)（事件处理程序) 同一个元素 同一个事件可以添加多个侦听器
+        btns[1].addEventListener('click', function () {
+            alert(22);
+        });
+        btns[1].addEventListener('click', function () {
+            alert(33);
+        })
     </script>
 </body>
 
