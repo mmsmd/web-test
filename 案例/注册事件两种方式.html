@@ -11,6 +11,7 @@
 <body>
     <button>传统注册事件</button>
     <button>方法监听注册事件</button>
+    <button>ie9 attachEvent</button>
     <script>
         var btns = document.querySelectorAll('button');
         //1.传统方式
@@ -29,6 +30,11 @@
         btns[1].addEventListener('click', function () {
             alert(33);
         })
+        //3.attachEvent （ie9以前可用）
+        btns[2].attachEvent('onclick', function () {
+            alert(11);
+        })
+
     </script>
 </body>
 
