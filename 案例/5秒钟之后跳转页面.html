@@ -9,7 +9,23 @@
 </head>
 
 <body>
+    <button>点击</button>
+    <div></div>
+    <script>
+        var div = document.querySelector('div');
+        var time = 5;
+        jumpPage();
+        setInterval(jumpPage, 1000);
 
+        function jumpPage() {
+            if (time == 0) {
+                location.href = 'http://baidu.com';
+            } else {
+                div.innerHTML = '您将在' + time + '秒钟之后跳转到首页';
+                time--;
+            }
+        }
+    </script>
 </body>
 
 </html>
