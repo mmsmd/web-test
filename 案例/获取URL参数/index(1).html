@@ -9,7 +9,18 @@
 </head>
 
 <body>
+    <div></div>
+    <script>
+        console.log(location.search);
+        //1.先去掉? substr('起始的位置'，截取几个字符);
+        var params = location.search.substr(1);
+        //2.利用=把字符串分割为数组 split('=');
+        var arr = params.split('=');
+        console.log(arr);
 
+        var div = document.querySelector('div');
+        div.innerHTML = arr[1] + '欢迎您';
+    </script>
 </body>
 
 </html>
