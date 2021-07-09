@@ -9,7 +9,18 @@
 </head>
 
 <body>
-
+    <button>点击</button>
+    <script>
+        var btn = document.querySelector('button');
+        btn.addEventListener('click', function () {
+            // 记录浏览历史，所以可以实现后退功能
+            location.assign('https://www.baidu.com')
+            // 不记录浏览历史，不可以实现后退功能
+            // location.replace('https://www.baidu.com');
+            //reload 刷新页面，加参数true相当于强制刷新
+            // location.reload(true);
+        })
+    </script>
 </body>
 
 </html>
